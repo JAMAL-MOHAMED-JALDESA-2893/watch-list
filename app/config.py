@@ -1,7 +1,12 @@
+from app.instance.config import MOVIE_API_KEY
+
+
 class Config:
     '''
     General configuration parent class
     '''
+
+    MOVIE_BASE_API_URL = 'https://api.themoviedb.org/3/movie/{}?api_key={}'
     pass
 
 
