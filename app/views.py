@@ -8,8 +8,8 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-    message = 'heloo malka'
-    return render_template('index.html', message = message)
+    title = 'Home - welcome to movie review website'
+    return render_template('index.html')
 
 @app.route('/movie/<int:movie_id>')
 def movie(movie_id):
